@@ -1,40 +1,249 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <style>
+      .highlight-green {
+        color: rgb(24, 188, 24);
+      }
+      .broken {
+        font-size: 30px;
+        text-align: justify;
+      }
+    </style>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          OWASP Top 10 Security Risks
+          <img data-src="images/slide1.png" />
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          <p class="fragment highlight-green">What is OWASP?</p>
+          <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+            The Open Web Application Security Project, OWASP for short, is an
+            open and non-profit foundation and community dedicated to helping
+            organizations, developers and just about anyone interested in AppSec
+            improve the security of their software and build secure
+            applications.
+          </section>
+          <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+            Launched in 2001, OWASP is a well-known entity in the AppSec and
+            developer community. With a program that includes many local
+            chapters throughout the world (275 to be exact) as well as numerous
+            open source projects and educational and training conferences,
+            everyone is encouraged to participate and join this foundation
+            boasting more than ten thousand members.
+          </section>
+          <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+            What makes OWASP so respected and resourceful for both amateur and
+            professional developers is that they hold true to their core values,
+            which dictates that all of their projects, tools, documents and
+            chapters are open and free for anyone interested in learning about
+            application security.
+          </section>
+          <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+            Engaging with their projects and chapters is a great way to not only
+            learn, but to also network and build your reputation in the
+            community.
+          </section>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          <img data-src="images/top10.jpg" />
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Broken access control
+          <img data-src="images/slide10.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker uses an automated scanning tool to search for
+            unlinked resources on the target system and finds the following
+            unprotected resource.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker initiates a forced browsing attack on the target
+            system to verify whether administrative rights are required to
+            access the admin page.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker accesses the admin page as an unauthenticated user
+            and performs unauthorized actions.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Cryptographic failures
+          <img data-src="images/slide11.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker gains access to an organization's network and uses an
+            application flaw to retrieve a password database.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker can use a rainbow table to expose the passwords and
+            credential stuffing tools to test credential pairs on other
+            websites.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Injection attacks
+          <img data-src="images/slide12.png" />
+          <p class="fragment broken highlight-red">
+            - An attacker injects a command, query, or code into a vulnerable
+            element of the application.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The web application server executes the injection.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker gains unauthorized access, causes a denial of
+            service, steals sensitive data, or causes a similarly nefarious
+            outcome.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Insecure design
+          <img data-src="images/slide13.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker scans for vulnerable APIs and identifies an API that
+            does not properly filter input and does not use the organizations
+            API security gateway.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker injects a malicious script into the vulnerable API
+            and the victim's browser accesses the API through the application.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Security misconfiguration
+          <img data-src="images/slide14.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker gains access to an organization's internal network.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker scans the network for devices and performs dictionary
+            checks to determine which devices are using default credentials.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker logs in to the vulnerable devices using the default
+            passwords and takes over.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Vulnerable and outdated components
+          <img data-src="images/slide15.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker gains access to an organization's internal network.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker runs a scanning tool to locate internal systems with
+            unpatched or outdated components.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker exploits a flaw in the outdated component that allows
+            them to install malicious code on the application server.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Identification and authentication failures
+          <img data-src="images/slide16.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker obtains a password database from a hacker forum.
+          </p>
+          <p class="fragment broken highlight-red">
+            - Since a weak hashing algorithm was used to encrypt passwords, the
+            attacker can expose the user credentials.
+          </p>
+          <p class="fragment broken highlight-red">
+            - If the login is successful, the attacker knows they have a set of
+            valid credentials.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Software and data integrity failures
+          <img data-src="images/slide17.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker identifies an organizations' insecure CI/CD pipeline
+            and installs malicious code that is pushed into production.
+          </p>
+          <p class="fragment broken highlight-red">
+            - Customers unknowingly download the malicious code from the
+            organizations update servers.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The attacker gains access to the customer's network.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Security logging and monitoring failures
+          <img data-src="images/slide18.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker runs a scanning tool to locate internal systems with
+            known vulnerabilities and obtains sensitive data.
+          </p>
+          <p class="fragment broken highlight-red">
+            - Since the organization does not follow adequate logging and
+            monitoring practices, they are unable to detect active attacks.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The data breach continues undetected for months.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          Server-side request forgery (SSRF)
+          <img data-src="images/slide18.png" />
+          <p class="fragment broken highlight-red">
+            - The attacker sends a forged request to the vulnerable application
+            and targets the internal resource that resides on the same network.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The application sends the forged request to the internal resource
+            and receives a response with the requested data.
+          </p>
+          <p class="fragment broken highlight-red">
+            - The application sends the data back to the attacker, bypassing
+            detection.
+          </p>
+        </section>
+        <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+          <img data-src="images/final.png" />
+          <section data-markdown>
+            <textarea data-template>
+              Explore the world of cyber security [link](https://owasp.org/).
+            </textarea>
+          </section>
+          <section data-background-gradient="linear-gradient(to bottom, #101012, #505E53)">
+            Thank you for your time and attention.
+          </section>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
